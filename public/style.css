@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #e0f1fe;
+}
+
+.main_app{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 8rem auto;
+    width: 42rem;
+    height: 28rem;
+    box-shadow: 4px 4px 14px #d2dae0;
+    border-radius: 0.4rem;
+    overflow: hidden;
+}
+
+
+.brand{
+    display: flex;
+    background-color: #d5dee4;
+}
+
+.brand img {
+    height: 2.5rem;
+    margin:0.5rem;
+}
+
+.brand h2 {
+    margin: 0.4rem 0.6rem;
+    padding-top: 0.4rem;
+    text-align: center;
+    font-weight: 500;
+
+}
+
+
+.message_section{
+    height: 23rem;
+    width: auto;
+    padding: 0.5rem;
+    padding-top: 1.3rem;
+    overflow-y: auto;
+}
+
+.message{
+    margin: 0.4rem;
+    width: 16rem;
+    padding: 0.6rem;
+    padding-top: 0rem;
+    height: auto;
+    font-size: 0.9rem;
+    border-radius: 0.4rem;
+    background-color: antiquewhite;
+    margin-bottom: 2rem;
+}
+
+.incoming{
+    background-color: #3982eb;
+    color: white;
+
+}
+
+.outgoing{
+    background-color: #d4e6ff;
+    position: relative;
+    left: 24rem;
+
+}
+
+.message h5{
+    position: relative;
+    top: -1.1rem;
+    left: -0.4rem;
+    color: black;
+    font-weight: 500;
+}
+
+.message_box{
+    height: 3rem;
+    font-size: 1.1rem;
+    padding: 0.7rem 0.6rem;
+    outline: none;
+    border: none;
+    background-color: #ebf1f6a3;
+
+}
