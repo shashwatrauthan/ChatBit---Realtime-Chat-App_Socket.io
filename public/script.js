@@ -1,5 +1,9 @@
 const socket = io();
 
+const sockets = require("socket.io-client")({
+  rejectUnauthorized: false // WARN: please do not do this in production
+});
+
 let messageSection = document.querySelector('.message_section');
 // Username
 let u_name;
@@ -50,7 +54,7 @@ function addMsg(msg,type)
 
 
 // Receiving Messages
-await socket.on("message",(msg)=>{
+socket.on("message",(msg)=>{
     addMsg(msg,"incoming");
 })
 

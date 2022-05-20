@@ -21,10 +21,10 @@ server.listen(port, () => {
 
 const io = require("socket.io")(server);
 
-io.on("connection",async (socket)=>{
+io.on("connection",(socket)=>{
     console.log("Connected...");
     
-    await socket.on("message",(msg)=>{
+    socket.on("message",(msg)=>{
         socket.broadcast.emit("message",msg);
     })
 })
