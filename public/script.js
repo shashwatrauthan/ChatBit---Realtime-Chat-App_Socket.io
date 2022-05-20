@@ -49,7 +49,7 @@ function addMsg(msg,type)
 
 
 // Receiving Messages
-socket.on("message",(msg)=>{
+await socket.on("message",(msg)=>{
     addMsg(msg,"incoming");
 })
 
