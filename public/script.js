@@ -1,9 +1,5 @@
 const socket = io();
 
-const sockets = require("socket.io-client")({
-  rejectUnauthorized: false // WARN: please do not do this in production
-});
-
 let messageSection = document.querySelector('.message_section');
 // Username
 let u_name;
