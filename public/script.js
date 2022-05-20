@@ -1,4 +1,7 @@
-const socket = io();
+const socket = io()({
+    rejectUnauthorized: false // WARN: please do not do this in production
+  });
+
 
 let messageSection = document.querySelector('.message_section');
 // Username

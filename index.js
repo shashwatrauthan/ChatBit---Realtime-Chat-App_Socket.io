@@ -1,10 +1,6 @@
 const express = require('express')
 const http = require('http')
 
-const sockets = require("socket.io-client")({
-  rejectUnauthorized: false // WARN: please do not do this in production
-});
-
 
 const app = express()
 const port = process.env.PORT || 3000
